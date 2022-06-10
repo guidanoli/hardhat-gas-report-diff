@@ -1,18 +1,5 @@
 #!/usr/bin/env python3
 
-################################################################
-# Hardhat Gas Report Diff
-# ==============================================================
-# Steps:
-# 1) Run `npx hardhat test` before and after applying
-#    some change to the smart contracts you're testing
-# 2) Save the gas reports into separate files (e.g.
-#    `before.txt` and `after.txt`)
-# 3) Run `python -m hardhat-gas-report-diff before.txt after.txt`
-# 4) It should output a Markdown table showing how much each
-#    method call and deployment cost changed (also in %)
-################################################################
-
 from enum import Enum, auto
 
 METHOD_COLUMNS = (
